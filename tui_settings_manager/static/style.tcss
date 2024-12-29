@@ -1,0 +1,7 @@
+SettingsWidget {
+    border: grey;
+}
+
+SettingsWidget:focus-within {
+    border: heavy $accent;
+}

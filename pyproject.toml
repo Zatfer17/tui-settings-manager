@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "tui-settings-manager"
+version = "0.1.0"
+description = "A Python based TUI for managing the settings on Linux"
+authors = ["Matteo Ferrini <mimmi.ferrini@gmail.com>"]
+readme = "README.md"
+include = [
+    "tui_settings_manager/static"
+]
+
+[tool.poetry.scripts]
+tui-settings-manager = "tui_settings_manager.main:settings_manager_app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+textual = "^0.89.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
